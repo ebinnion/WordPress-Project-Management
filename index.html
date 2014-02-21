@@ -23,20 +23,29 @@
 
         <style type = "text/css">
 
-           .col-md-10{ 
-                 background-color: #000;         
+            body{
+                background-color: #f9f5ef;
             }
-            
+
             i{
-                color: grey;
+                color: #bdc3c7;
             }
 
-            
+            .navi-bar{
+                height: 115px;
+                /*border: 1px solid #000;*/
+            }
 
+            .container .col-md-10{ 
+                 background-color: #333333;
+                /* border: 1px solid #000;*/         
+            }
+            
             .navi-icon-holder{
                 margin-left: 150px;
                 margin-top: 37px;
             }
+
             .navi-header{
                 color: grey;
             }
@@ -45,19 +54,31 @@
 
                 display: inline;
                 list-style-type: none;
-                margin-left: 15px;
+                margin-left: 20px;
             }
+
             .navbar{
                 margin-top: 37px;
                 margin-right:0px;
             }
 
+            .content .col-md-2{
+                /*border: 1px solid #000;*/
+                height: 100px;
+
+            }
+
+            .content .col-md-8{
+                /*border: 1px solid #000;*/
+                height: 600px;
+                background-color: #fff;
+                width: 975px;
+            }
         </style>
 </head>
 
 <body>
-    <header role="banner">
-        
+    <header role="banner"> 
         <div class="container"> 
             <nav class="navi-bar" role = "navigation">
                 <div class = "row">
@@ -74,8 +95,7 @@
                                 <div class = "navi-icon-holder">
                                     <ul>
                                         <li>
-                                            <a href="#" class = "dropdown-toggle" data-toggle = "dropdown"><i class="fa fa-folder-o fa-lg"></i>
-                                            </a>
+                                            <a href="#" class = "dropdown-toggle" data-toggle = "dropdown"><i class="fa fa-folder-o fa-lg"></i></a>
                                         </li>
                                         <li>
                                             <a href="#">
@@ -87,10 +107,12 @@
                                                 <i class = "fa fa-male fa-lg"></i>
                                             </a>
                                             <ul class="dropdown-menu" >
-                                            <li class = "uk-nav-header" id = "drop-header">Username</li>
-                                            <li id = "dropdowns"><a href="#">Settings</a></li>
-                                            <li id = "dropdowns"><a href="#">Sign Out</a></li>
-                                        </ul>
+                                                <li class = "uk-nav-header">
+                                                    Username
+                                                </li>
+                                                <li><a href="#">Settings</a></li>
+                                                <li><a href="#">Sign Out</a></li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </div>
@@ -103,42 +125,29 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <!--
-                       
-                            
-                        </div>
-                        -->
-                        <!-- Collect the nav links, forms, and other content for toggling -->  
-<!--
-                        <div class="collapse navbar-collapse navHeaderCollapse"> 
-                            
-                            
-                            <div class = "header-right"> 
-                                <ul class = "nav navbar-nav">
-                                    <li class="dropdown">
-                                      
-                                        
-                                    </li>
-                                </ul>
-                                
-                            </div>   
-                        </div>-->
                     </div>
                     <div class = "col-md-1">
                     </div>
                 </div>
             </nav><!-- /.navbar-collapse -->
-        </div>
-        
+        </div>    
     </header>
 
+
+    <div class = "content">
+        <div class = "row">
+            <div class = "col-md-2">
+            </div>
+            <div class = "col-md-8">
+            </div>
+            <div class = "col-md-2">
+            </div>
+        </div>
+    </div>
    
 
 
-    <div class="container">
-        
-    </div>
+    
     
 
     <!-- Development -->
