@@ -23,253 +23,122 @@
 
         <style type = "text/css">
 
-            body{
-                padding-top:91px;
+           .col-md-10{ 
+                 background-color: #000;         
             }
-/*
-            header{
-                background-color:#000;
-            }
-            */
-            #masthead{
-                background-color:#024C69;
-                height: 230px;
+            
+            i{
+                color: grey;
             }
 
-            #masthead h1{
-                color:#FFF;
-            }
+            
 
-            #masthead p{
-                color:#FFF;
+            .navi-icon-holder{
+                margin-left: 150px;
+                margin-top: 37px;
             }
-
-            #dropdowns{
-                height: 20px;
-                width: 10px;
+            .navi-header{
+                color: grey;
             }
+            
+            .navi-icon-holder li{
 
-            #drop-header{
-                font-weight: bold;
+                display: inline;
+                list-style-type: none;
+                margin-left: 15px;
             }
-
-            .navHeaderCollapse{
-                height: 20px;
+            .navbar{
+                margin-top: 37px;
+                margin-right:0px;
             }
-
-            .content-header{
-                padding-top:45px;
-            }
-
-            #lg-menu{
-                padding-top:30px;
-            }
-
-            .search-left{
-                padding-top: 0px;
-            }
-            #xs-menu{
-                /*padding-top:0px;*/
-            }
-
-            #project-star-1{
-
-                border: solid 1px #000;
-            }
-
 
         </style>
 </head>
 
 <body>
     <header role="banner">
-        <nav class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
-            <div class="container">  
-                <div class = "col-md-12">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">  
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-                        <a class="navbar-brand" href="#" alt = "Brand">Brand</a>
+        
+        <div class="container"> 
+            <nav class="navi-bar" role = "navigation">
+                <div class = "row">
+                    <div class = "col-md-1">
                     </div>
-                    
-                    <!-- Collect the nav links, forms, and other content for toggling -->   
-                    <div class="collapse navbar-collapse navHeaderCollapse"> 
-                        <ul class="nav navbar-nav navbar-left">
-                            <ul class = "nav navbar-nav hidden-xs">
-                                
-                            </ul>
-                            <li class = "dropdown">
-                                <a href="#" class = "dropdown-toggle" data-toggle = "dropdown">Message<!--<span class="glyphicon glyphicon-folder-open"></span>-->
-                                    <b class = "caret"></b>
-                                </a>
-                                <ul class = "dropdown-menu" >
-                                    <li class = "nav-header" id = "drop-header">File/Message</li>
-                                    <li id = "dropdowns"><a href = "#">sub-item</a></li>
-                                    <li id = "dropdowns"><a href = "#">sub-item</a></li>
-                                    <li id = "dropdowns"><a href = "#">sub-item</a></li>
-                                    <li class = "nav-divider"></li>
-                                    <li id = "dropdowns"><a href = "#">sub-item</a></li>
-                                    <li id = "dropdowns"><a href = "#">sub-item</a></li>
-                                    <li id = "dropdowns"><a href = "#">sub-item</a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="#"  class = "dropdown-toggle" data-toggle = "dropdown">Notification<!--<span class = "glyphicon glyphicon-bell"></span>-->
-                                    <b class = "caret"></b>
-                                </a>
-                                <ul class = "dropdown-menu" id = "drop-downs">
-                                    <li class = "nav-header" id = "drop-header">Notifications</li>
-                                    <li id = "dropdowns"><a href = "#">sub-item</a></li>
-                                    <li id = "dropdowns"><a href = "#">sub-item</a></li>
-                                    <li id = "dropdowns"><a href = "#">sub-item</a></li>
-                                    <li class = "nav-divider"></li>
-                                    <li id = "dropdowns"><a href = "#">sub-item</a></li>
-                                    <li id = "dropdowns"><a href = "#">sub-item</a></li>
-                                    <li id = "dropdowns"><a href = "#">sub-item</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Calendar</a>
-                            </li>
-                        </ul>
-                        
-                        <div class = "header-right"> 
-                            <ul class = "nav navbar-nav navbar-right">
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class = "glyphicon glyphicon-user"></span>
-                                        <b class="caret"></b>
-                                    </a>
-                                    <ul class="dropdown-menu" >
-                                        <li class = "uk-nav-header" id = "drop-header">User Name</li>
-                                        <li id = "dropdowns"><a href="#">sub-item</a></li>
-                                        
-                                        <li id = "dropdowns"><a href = "#">sub-item</a></li>
-                                        <li id = "dropdowns"><a href = "#">sub-item</a></li>
-                                        <li class = "nav-divider"></li>
-                                        <li id = "dropdowns"><a href = "#">sub-item</a></li>
+                    <div class = "col-md-10">
+                        <div class = "row">
+                            <div class = "col-md-4">
+                                 <div class="navi-header">  
+                                    <a class="navbar-brand" href="#" alt = "Brand">Brand</a>
+                                </div>
+                            </div>
+                            <div class = "col-md-4">
+                                <div class = "navi-icon-holder">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class = "dropdown-toggle" data-toggle = "dropdown"><i class="fa fa-folder-o fa-lg"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class = "fa fa-calendar fa-lg "></i>
+                                            </a>                                          
+                                        </li>
+                                        <li class = "dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                <i class = "fa fa-male fa-lg"></i>
+                                            </a>
+                                            <ul class="dropdown-menu" >
+                                            <li class = "uk-nav-header" id = "drop-header">Username</li>
+                                            <li id = "dropdowns"><a href="#">Settings</a></li>
+                                            <li id = "dropdowns"><a href="#">Sign Out</a></li>
+                                        </ul>
+                                        </li>
                                     </ul>
-                                </li>
-                            </ul>
-                            <ul class = "nav navbar-nav hidden-xs navbar-right">
-                                <li>
+                                </div>
+                            </div>
+                            <div class = "col-md-4">
+                                <div class = "navi-search">  
                                     <form class = "navbar-form">
                                         <input class = "search-field" type = "search" placeholder = "Search..">
-                                    </form>
-                                </li>
-                            </ul>
-                        </div>   
+                                    </form> 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <!--
+                       
+                            
+                        </div>
+                        -->
+                        <!-- Collect the nav links, forms, and other content for toggling -->  
+<!--
+                        <div class="collapse navbar-collapse navHeaderCollapse"> 
+                            
+                            
+                            <div class = "header-right"> 
+                                <ul class = "nav navbar-nav">
+                                    <li class="dropdown">
+                                      
+                                        
+                                    </li>
+                                </ul>
+                                
+                            </div>   
+                        </div>-->
+                    </div>
+                    <div class = "col-md-1">
                     </div>
                 </div>
-            </div>
-        </nav><!-- /.navbar-collapse -->
+            </nav><!-- /.navbar-collapse -->
+        </div>
+        
     </header>
 
    
 
 
     <div class="container">
-        <div class="row row-offcanvas row-offcanvas-left">
-            
-            <div class="column col-xs-4 col-sm-2  sidebar-offcanvas" id="sidebar">
-                <div class="left-sidebar">
-                    <!-- big sidenav -->
-                    <ul class="nav hidden-xs" id="lg-menu">
-                        <li><a href="#"><i class="fa fa-plus fa-2x"></i> New Project</a></li>
-                        <li><a href="#"><i class="fa fa-trash-o fa-2x"></i> Remove</a></li>
-                        <li><a href="#"><i class="fa fa-archive fa-2x"></i> Archive</a></li>
-                    </ul>
-                    <!-- tiny only sidenav-->
-                    <ul class="nav visible-xs" id="xs-menu">
-                        <div class = "search-left">
-                            <li>
-                                <form class = "navbar-form">
-                                    <input class = "search-field" type = "search" placeholder = "Search..">
-                                </form>
-                            </li>
-                        </div>
-                        <li><a href="#" class="text-center"><i class="fa fa-plus fa-lg"></i></a></li>
-                        <li><a href="#" class="text-center"><i class="fa fa-trash-o fa-lg"></i></a></li>
-                        <li><a href="#" class="text-center"><i class="fa fa-archive fa-lg"></i></a></li>
-                    </ul>
-                </div>
-            </div>                                        
-            <div class="page-content-container">
-                <div class="content-header">
-                    <div class="column col-xs-8 col-sm-10 " id="main">
-                        <h3 class = "hidden-xs">
-                                Content
-                        </h3>
-                        <div class = "header-xs" align = "center">
-                            <h3 class = "visible-xs">
-                                Content
-                            </h3>
-                        </div>
-                            
-                        <div class="col-md-4" id="project-star-1">
-                            <p> 
-                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            </p>
-                        </div>
-                        <div class="col-md-4" id="project-star-1">
-                            <p> 
-                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            </p>
-                        </div>
-                        <div class="col-md-4" id="project-star-1">
-                            <p> 
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            </p>
-                        </div>
-                            
-                        <div class="col-md-12" id="detail-project-star">
-                            <table id ="detail-project">
-                                <tr>
-                                    <td>
-                                        <h2>All Projects (A-Z)</h2>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Project Name
-                                    </td>
-                                    <td>
-                                        <ul id="delete-archive">
-                                            <li>
-                                                <a href="#" class="text-center">Trash<i class="fa fa-trash-o fa-lg"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="text-center">Archive<i class="fa fa-archive fa-lg"></i></a>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                </tr>                                                         
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
-
-
-    <!--<footer role="contentinfo" class="upper">-->
-        <div class = "bottom-menu bottom-menu-inverse"> 
-            <div class="container">
-                <div class="row">
-                        <div class="col-md-12">
-                                <p>&copy; 2013 WordPress Project Management. All rights reserved.</p>
-                                <p><a href="/privacy">Privacy Policy</a> &middot; <a href="/disclosure">Terms of Service</a></p>
-                        </div>
-                </div>
-            </div>
-        </div>
     
 
     <!-- Development -->
@@ -278,16 +147,5 @@
     <script src="js/production.js"></script>
 
 </body>
-<!--
-<div class = "bottom-menu bottom-menu-inverse">
-        <div class = "container">
-            <ul>
-                <li><span class="glyphicon glyphicon-folder-open"></span></li>
-                <li><a href = "#" class = "fui-pinterest"></a></li>
-                <li><a href = "#" class = "fui-pinterest"></a></li>              
-                <li><a href = "#" class = "fui-pinterest"></a></li>
-            </ul>
-        </div>
-    </div>
--->
+
 </html>
