@@ -24,7 +24,7 @@
         <style type = "text/css">
 
             body{
-                background-color: #f9f5ef;
+                background-color: #AFC5CF;
             }
 
             i{
@@ -32,13 +32,8 @@
             }
 
             .navi-bar{
-                height: 115px;
-                /*border: 1px solid #000;*/
-            }
-
-            .container .col-md-10{ 
+                height: 100px;
                  background-color: #333333;
-                /* border: 1px solid #000;*/         
             }
             
             .navi-icon-holder{
@@ -46,111 +41,165 @@
                 margin-top: 37px;
             }
 
+            .navi-icon-holder li{
+                display: inline;
+                list-style-type: none;
+                padding-right: 15px;
+            }
+
+            .content{
+                border : 2px solid #000;
+                background-color: #fff;
+                margin-top: 20px;
+            }
+
+            .header-wrapper{
+                margin: 10px 20px 0px 20px;
+            }
+
+            .header-wrapper .inner{
+                border: 2px solid #000;
+                height: 75px;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+
+            a:hover{
+                text-decoration: none;
+            }
+
+            .all-projects-title{
+               margin: 2% 28% 2% 34%;
+            }
+
+            .list-project-wrapper{
+                margin-left: 12px;
+            }
+
+            /*  To-do  */
             .navi-header{
                 color: grey;
             }
-            
-            .navi-icon-holder li{
 
-                display: inline;
-                list-style-type: none;
-                margin-left: 20px;
-            }
 
-            .navbar{
-                margin-top: 37px;
-                margin-right:0px;
-            }
+           
 
-            .content .col-md-2{
-                /*border: 1px solid #000;*/
-                height: 100px;
-
-            }
-
-            .content .col-md-8{
-                /*border: 1px solid #000;*/
-                height: 600px;
-                background-color: #fff;
-                width: 975px;
-            }
         </style>
 </head>
 
 <body>
-    <header role="banner"> 
-        <div class="container"> 
-            <nav class="navi-bar" role = "navigation">
-                <div class = "row">
-                    <div class = "col-md-1">
+    <div class="container"> 
+        <div class = "row">
+            <div class = "col-md-1"></div>
+            <div class = "col-md-10">
+                <div class = "navi-bar" role = "navigation">
+                    <div class = "row">
+                        <div class = "col-sm-3">
+                             <div class="navi-header">  
+                                <a class="navbar-brand" href="#" alt = "Brand">Brand</a>
+                            </div>
+                        </div>
+                        <div class = "col-sm-5">
+                            <div class = "navi-icon-holder pull-right">
+                                <ul>
+                                    <li>
+                                        <a href="#" class = "dropdown-toggle" data-toggle = "dropdown"><i class="fa fa-folder-o fa-lg"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class = "fa fa-calendar fa-lg "></i>
+                                        </a>                                          
+                                    </li>
+                                    <li class = "dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class = "fa fa-male fa-lg"></i>
+                                        </a>
+                                        <ul class="dropdown-menu" >
+                                            <li class = "uk-nav-header">
+                                                Username
+                                            </li>
+                                            <li><a href="#">Settings</a></li>
+                                            <li><a href="#">Sign Out</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class = "col-sm-4 hidden-xs">
+                            <div class = "navi-search">  
+                                <form class = "navbar-form">
+                                    <input class = "search-field" type = "search" placeholder = "Search..">
+                                </form> 
+                            </div>
+                        </div>
                     </div>
-                    <div class = "col-md-10">
+                </div>
+
+                <div class = "content">
+                    <div class = "header-wrapper">
                         <div class = "row">
-                            <div class = "col-md-4">
-                                 <div class="navi-header">  
-                                    <a class="navbar-brand" href="#" alt = "Brand">Brand</a>
+                            <div class = "col-sm-4">
+                                <a href = "#">
+                                    <div class = "inner">
+                                        <p>WordPress Project Management</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class = "col-sm-4">
+                                <a href = "#">
+                                    <div class = "inner">
+                                        <p>Project 2</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class = "col-sm-4">
+                                <a href = "#">
+                                    <div class = "inner">
+                                        <p>Project 3</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class = "all-projects-wrapper">
+                        <div class = "row">
+                            <div class = "col-sm-12">
+                                <div class = "all-projects-title">
+                                    <h2>All Projects</h2>
                                 </div>
                             </div>
-                            <div class = "col-md-4">
-                                <div class = "navi-icon-holder">
-                                    <ul>
-                                        <li>
-                                            <a href="#" class = "dropdown-toggle" data-toggle = "dropdown"><i class="fa fa-folder-o fa-lg"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class = "fa fa-calendar fa-lg "></i>
-                                            </a>                                          
-                                        </li>
-                                        <li class = "dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                                <i class = "fa fa-male fa-lg"></i>
-                                            </a>
-                                            <ul class="dropdown-menu" >
-                                                <li class = "uk-nav-header">
-                                                    Username
-                                                </li>
-                                                <li><a href="#">Settings</a></li>
-                                                <li><a href="#">Sign Out</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class = "col-md-4">
-                                <div class = "navi-search">  
-                                    <form class = "navbar-form">
-                                        <input class = "search-field" type = "search" placeholder = "Search..">
-                                    </form> 
+                        </div>
+                        <div class = "list-project-wrapper">
+                            <div class = "row">
+                                <div class = "col-sm-12">
+                                    <div class = "project-title">
+                                        <p>Name</p>
+                                    </div>
+                                    <div class = "row">
+                                        <div class = "col-sm-5 col-xs-4">
+                                            <div class = "project-name">
+                                                <a href = "#"><p>No projects yet... get to working!</p></a>
+                                            </div>
+                                        </div>
+                                        <div class = "col-sm-7 col-xs-8">
+                                            <div class = "star">
+                                                <a href = "#"><i class = "fa fa-star fa-lg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class = "col-md-1">
-                    </div>
-                </div>
-            </nav><!-- /.navbar-collapse -->
-        </div>    
-    </header>
-
-
-    <div class = "content">
-        <div class = "row">
-            <div class = "col-md-2">
+                </div>  
             </div>
-            <div class = "col-md-8">
-            </div>
-            <div class = "col-md-2">
-            </div>
+            <div class = "col-md-1"></div>
         </div>
-    </div>
-   
-
-
-    
-    
-
-    <!-- Development -->
+    </div>   
+      <!-- Development -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <!-- end Development -->
     <script src="js/production.js"></script>
