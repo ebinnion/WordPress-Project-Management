@@ -3,66 +3,83 @@
 @import "custom/wordpress";
 @import "custom/gravityforms";
 
-
             
-
-            body{
-                background-color: #AFC5CF;
-            }
-
-            i{
-                color: #bdc3c7;
-            }
-
-            .navi-bar{
-                height: 100px;
-                 background-color: #333333;
-            }
-            
-            .navi-icon-holder{
-                margin-left: 150px;
-                margin-top: 37px;
-            }
-
-            .navi-icon-holder li{
+body{
+    //background-color: #AFC5CF;
+    background-color: #BDC3C7;
+    .navi-bar{
+        background-color: #333333;
+        .navi-header{
+            padding-left: 30px;
+        }                   
+        .col-sm-5{
+            padding: @navbar-padding-vertical;
+            li{
                 display: inline;
-                list-style-type: none;
-                padding-right: 15px;
+                padding-left: 30px;
+                padding-right: 25px;
+                 i{
+                    color: #BDC3C7;
+                }
             }
+        }
+        .col-sm-4{
+            padding-top: 5px;       
+        }
+    }
 
-            .content{
-                border : 2px solid #000;
-                background-color: #fff;
-                margin-top: 20px;
-            }
 
-            .header-wrapper{
-                margin: 10px 20px 0px 20px;
-            }
 
-            .header-wrapper .inner{
+    .content-wrapper{
+        border : 2px solid #000;
+        background-color: #fff;
+        margin-top: 10px;
+        .header-wrapper{
+            margin: 10px 20px 0px 20px;
+            .inner{
                 border: 2px solid #000;
                 height: 75px;
                 margin-bottom: 5px;
                 text-align: center;
             }
-
             a:hover{
                 text-decoration: none;
+                p{
+                    font-size: 20px;
+                }
             }
+        }
+    }
 
-            .all-projects-title{
-               margin: 2% 28% 2% 34%;
+    .all-projects-wrapper{
+        .all-projects-title{
+            text-align: center;
+        }
+        .list-project-wrapper{
+            margin-left: 20px;
+            .project-title{
+                p{
+                    font-size: 30px;
+                    font-weight: bold;
+                }
             }
+            .project-name{
+                a:hover{
+                    text-decoration: none;
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .star{
+                a:hover{
+                    color: yellow;
+                }
+            }
+        }
+    }
+}
 
-            .list-project-wrapper{
-                margin-left: 12px;
-            }
-
-            /*  To-do  */
-            .navi-header{
-                color: grey;
-            }
 
 
            

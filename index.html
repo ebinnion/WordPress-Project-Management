@@ -30,40 +30,35 @@
 <body>
     <div class="container"> 
         <div class = "row">
-            <div class = "col-md-1"></div>
-            <div class = "col-md-10">
-                <div class = "navi-bar" role = "navigation">
+            <div class = "col-md-10 col-md-push-1">
+                <div class = "navbar-default navi-bar" role = "navigation">
                     <div class = "row">
                         <div class = "col-sm-3">
-                             <div class="navi-header">  
+                            <div class="navi-header">  
                                 <a class="navbar-brand" href="#" alt = "Brand">Brand</a>
                             </div>
                         </div>
                         <div class = "col-sm-5">
-                            <div class = "navi-icon-holder pull-right">
-                                <ul>
-                                    <li>
-                                        <a href="#" class = "dropdown-toggle" data-toggle = "dropdown"><i class="fa fa-folder-o fa-lg"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class = "fa fa-calendar fa-lg "></i>
-                                        </a>                                          
-                                    </li>
-                                    <li class = "dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <i class = "fa fa-male fa-lg"></i>
-                                        </a>
-                                        <ul class="dropdown-menu" >
-                                            <li class = "uk-nav-header">
-                                                Username
-                                            </li>
-                                            <li><a href="#">Settings</a></li>
-                                            <li><a href="#">Sign Out</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul class = "pull-right">
+                                <li>
+                                    <a href="#" class = "dropdown-toggle" data-toggle = "dropdown"><i class="fa fa-folder-o fa-lg"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class = "fa fa-calendar fa-lg "></i>
+                                    </a>                                          
+                                </li>
+                                <li class = "dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class = "fa fa-male fa-lg"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class = "uk-nav-header">Username</li>
+                                        <li><a href="#">Settings</a></li>
+                                        <li><a href="#">Sign Out</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                         <div class = "col-sm-4 hidden-xs">
                             <div class = "navi-search">  
@@ -74,14 +69,20 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
 
-                <div class = "content">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-10 col-md-push-1">
+                <div class = "content-wrapper">
                     <div class = "header-wrapper">
                         <div class = "row">
                             <div class = "col-sm-4">
                                 <a href = "#">
                                     <div class = "inner">
-                                        <p>WordPress Project Management</p>
+                                        <a href = "#"><p>WordPress Project Management</p>
                                     </div>
                                 </a>
                             </div>
@@ -101,9 +102,7 @@
                             </div>
                         </div>
                     </div>
-
-
-
+                
                     <div class = "all-projects-wrapper">
                         <div class = "row">
                             <div class = "col-sm-12">
@@ -116,15 +115,15 @@
                             <div class = "row">
                                 <div class = "col-sm-12">
                                     <div class = "project-title">
-                                        <p>Name</p>
+                                        <p>Project Name</p>
                                     </div>
                                     <div class = "row">
-                                        <div class = "col-sm-5 col-xs-4">
+                                        <div class = "col-sm-5 col-xs-10">
                                             <div class = "project-name">
                                                 <a href = "#"><p>No projects yet... get to working!</p></a>
                                             </div>
                                         </div>
-                                        <div class = "col-sm-7 col-xs-8">
+                                        <div class = "col-sm-7 col-xs-2  pull-left">
                                             <div class = "star">
                                                 <a href = "#"><i class = "fa fa-star fa-lg"></i></a>
                                             </div>
@@ -134,11 +133,10 @@
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
-            <div class = "col-md-1"></div>
         </div>
-    </div>   
+    </div>    
       <!-- Development -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <!-- end Development -->
