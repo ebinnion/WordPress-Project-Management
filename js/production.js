@@ -2025,9 +2025,14 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
 })( window.jQuery || window.Zepto );
 jQuery(document).ready(function($){
 
-	var star;
+	var projectNameArray = new Array();
+	var newDiv = document.createElement('div');
 
+	var star;
 	star = document.getElementById("star");
+
+	
+
 
 	$(star).click(function(){
 		var projectName = document.getElementById("project_name").innerHTML;
